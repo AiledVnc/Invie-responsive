@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invie - ¡las mejores guitarras!</title>
+    <meta charset="utf-8">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'> -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700'|Allerta' rel='stylesheet'>
+    <link rel="stylesheet" href="css/invie.css"/>
+    <!-- <link rel="stylesheet" media="(max-width: 800px)" href="css/media-querie.css"/> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+  </head>
+  <body>
+    <section id="portada" class="portada background">
+      <header id="header" class="header contenedor">
+        <figure class="logotipo">
+          <img src="images/invie.png" srcset="images/invie.png 1x, images/invie2x.png 2x" width="186" height="60" alt="Invie logotipo"/>
+          <!--  srcset para imagenes retina-->
+        </figure>
+        <span class="burguer-button icon-menu" id="burguer-button"></span>
+        <nav class="menu" id="menu">
+          <!--para hacer listas html tiene dos tipos de etiquetas: listas ordenadas (enumeracion) y desordenadas -->
+          <ul><!-- lista desordenada -->
+            <li><!-- elemento de la lista-->
+              <a href="index.html">Home</a><!-- enlace -->
+            </li>
+            <li><!-- elemento de la lista-->
+              <a href="#guitarras">Guitarras</a><!-- enlace --><!-- El # es para invocar el id -->
+            </li>
+            <li><!-- elemento de la lista-->
+              <a href="precios.html">Precios</a><!-- enlace -->
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="contenedor">
+        <h1 class="titulo">Guitarras <span>invie</span>sibles</h1>
+        <!-- span destaca algun texto -->
+        <h3 class="title-a">Sé la estrella de rock que siempre quisiste ser</h3>
+        <a class="button" href="#guitarras">Conoce mas</a>
+    </section>
+    <section id="guitarras" class="guitarras contenedor">
+      <h2>Nuestras guitarras </h2>
+      <div class="video-demo-contenedor">
+        <div class="video-demo">
+          <div class="video-responsive-contenedor">
+            <iframe class="video-responsive-src" width="560" height="315" src="https://www.youtube.com/embed/-r2-cvj7h3M" frameborder="0" allowfullscreen></iframe>  
+          </div>
+        </div>        
+      </div>
+      <!-- <video src="video/Elefante.mp4"></video> -->
+      <!-- <video controls height="315">
+        <source src="video/Elefante.mp4" type="video/mp4">
+      </video> -->
+      <article class="guitarra"><!-- englobar contenido muy especifico -->
+        <img class="derecha" data-src="images/invie-acustica.png| images/invie-acustica2x.png" alt="Guitarra Invie Acustica" width="350"/>
+        <!-- | y ruta de la imagen para que esto lo cargue en pantalla retina con blazy-->
+        <div class="contenedor-guitarra-a">
+          <h3 class="title-b">Invie Acustica</h3>
+          <ol><!-- lista ordenada -->
+            <li>Estilo vintage</li>
+            <li>Madera pura</li>
+            <li>Estuche invisible de aluminio</li>
+          </ol>
+        </div>
+      </article>
+      <article class="guitarra b">
+        <img class="izquierda" data-src="images/invie-classic.png| images/invie-classic2x.png" alt="Guitarra Invie Classic" width="350"/>
+        <div class="contenedor-guitarra-b">
+          <h3 class="title-b">Invie Classic</h3>
+          <ol><!-- lista ordenada -->
+            <li>Estilo vintage</li>
+            <li>Liviana</li>
+            <li>Inicia tu camino como Rockstar</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img data-src="images/invie-white.png|images/invie-white2x.png" alt="logotipo blanco"/>
+          <a href="tel:+573024566789"><strong>Telefono</strong><span>3024566789</span> </a>
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span>contacto@invie.com</span> </a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <!-- Cuando hay relacion entre id y for (label e input) se da una mejor vision al label al darle clic-->
+            <label for="nombre"> Nombre
+              <input type="text" required id="nombre" name="nombre"/> 
+            </label> 
+            <label for="email"> E-mail
+              <input type="email" required id="email" name="email"/> 
+            </label>
+            <div class="sexo">
+              <label for="mujer">
+              <input type="radio" id="mujer" checked name="sexo" value="mujer"/> mujer 
+              <!-- El atributo name sirve para evitar doble seleccion -->
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="hombre"/> hombre
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion" /> Cotización
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos" /> Reclamos
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comentarios"/> Comentarios
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros"/> Otros
+              </label>
+            </div> 
+          </div>
+          <div class="col2">
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="25" rows="7"></textarea>
+            <input type="submit" value="Enviar" class="button"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.7/hammer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.5.4/blazy.min.js"></script>
+    <script>
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
+
+      var $burguerButton = document.getElementById('burguer-button');
+      var $menu = document.getElementById('menu');
+      function toggleMenu() {
+        $menu.classList.toggle('active')
+      };
+      //Mostrar menu
+      function showMenu() {
+        $menu.classList.add('active');
+      };
+      //Ocultar menu
+      function hideMenu() {
+        $menu.classList.remove('active');
+      };
+      function mediaQuery() {
+        if (consulta.matches) {
+          console.log('se cumplio la condicion');
+          $burguerButton.addEventListener('touchstart', toggleMenu);
+        }else {
+          $burguerButton.removeEventListener('touchstart', toggleMenu);
+          console.log('no se cumplio la condicion');
+
+        }
+      }
+      mediaQuery();
+
+      //lazy loading 
+      var bLazy = new Blazy({
+        selector: 'img'
+      });
+
+      //Gestos touch
+      var $body = document.body;
+      var gestos = new Hammer($body);
+      gestos.on('swipeleft', hideMenu);
+      gestos.on('swiperight', showMenu);
+    </script>
+  </body>
+</html>
+<!-- 1.  Atributos (palabras en verde)-->
+<!-- 2. <a href="index.html" target="_blank" >Home</a> -->
+<!-- 3. <header id="header" style="background: red"> (dentro de body/header )-->
+<!-- 4. Al utilizar lo siguiente:
+  <style>
+      body
+      {
+        background: blue;
+      }
+  </style> (Dentro de head)
+Nos permite ahorrarnos etiquetas, ya que con el número 3, se tendria que poner una
+por una en la parte que quieramos algun estilo-->
+<!-- Al utilizar lo siguiente:
+<link rel="stylesheet" href="css/invie.css"/>
+Funciona igual que el numero 4, pero para esto, se tiene que crear un nuevo archivo, llamarlo "invie.css" y en el nuevo archivo se tiene que poner lo que va dentro de style
+(Dentro de head) -->
+<!-- 5. Clase de selectores en invie.css -->
+
+<!-- 6. <input type="" required/>-->
+<!--  placeholder="" Hace la descripcion dentro de una caja de texto-->
+<!--  value="" Validar los datos por ejemplo un checkBox-->
+<!-- 7. display: flex; -->

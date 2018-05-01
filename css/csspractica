@@ -1,0 +1,45 @@
+/*Hoja de estilo: css*/
+/*Un selector es la forma de como invocar o hacer referencia a las etiquetas html y darles una 
+personalización única con los estilos */
+/*body
+{
+	background: peru;
+}*/
+/*Sintaxis:
+tipo de selector {
+	propiedad: valor;
+	propiedad-2: valor;
+}*/
+/*1. Selector universal*/
+* {
+	border: 1px solid red;
+	margin: 10px;
+}
+/*2. Selector de etiqueta*/
+header {
+	background: blue;
+}
+section {
+	background: purple;
+}
+/*3. Selector descendente (que pueda funcionar en un elemento dentro de otro*/
+article h3 {
+	color: green;
+} 
+/*4. Selectores de clase*/
+.title-a {
+	background: yellow;
+}
+.title-b {
+	background: salmon;
+}
+/*5. Selector de id*/
+#header {
+	border: 3px solid black;
+}
+#portada {
+	border: 3px solid orange;
+}
+#guitarras {
+	border: 3px solid brown;
+}

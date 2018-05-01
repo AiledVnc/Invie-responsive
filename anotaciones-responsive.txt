@@ -1,0 +1,103 @@
+*Patrones de diseño
+
+-Mostly Fluid
+Pasar uno bajo del otro
+
+-Column Drop
+Columnas una alado de la otra se van aplilando
+
+-Layout Shifter
+Tener multiples diseños a lo largo que se va adaptando el sitio web
+
+-Tyny Tweaks
+Cuando un sitio web no tiene mucho contenido.
+Se hace más o menos grande el texto/imagen y va fluyendo 
+
+-Off Canvas
+Ir a cualquier parte del sitio direccionando el dedo en izquierda o derecha.
+Lo actual en los smartphones.
+
+*Tener en cuenta
+
+- Portrait - Landscape
+Que se vea bien en horizontal y vertical
+
+-Viewport
+Lo que entra en la pantalla
+
+-Densidad de Pixel Retina Display
+
+-Tab
+Gestos
+
+-Force Touch
+Mide la presión que se le pone a la pantalla
+
+-Saber para que tipo de dispositivo sera tu app 
+
+-Carga del sitio(Rapido)
+
+
+
+*Media querie
+Ver el estado del navegador (ancho/alto)
+
+Medidas Importantes: 320px, 768px, 1024px
+
+667 también es importante, iPhone 6 en Landscape Width
+
+Móvil
+@media (min-width: 576px) { … }
+
+tablets, 768px a +
+@media (min-width: 768px) { … }
+
+desktops 992px a +
+@media (min-width: 992px) { … }
+
+desktops, 1200px a +
+@media (min-width: 1200px) { … }
+
+meta viewport es el area visible del navegador
+
+Utilizar media queries con JavaScript 
+window.matchMedia('(max-width:800px)')
+
+
+Lazy loading es una excelente práctica para mejorar la experiencia en un sitio para móvil. 
+Se trata de cargar las imágenes solo mientras entén dentro del área visible del usuario, 
+ganamos velocidad y menos consumo de datos. Be lazy es la librería que nos facilita esta tarea. 
+
+
+(heigth * 100) / width 
+
+Así cómo tenemos diferentes tamaños de pantalla, también tenemos diferentes densidades. 
+Si la densidad de píxeles es mayor a 227 ppi, estamos hablando de una pantalla retina y lo 
+primero que se ve afectado, si el sitio no está optimizado, son las imágenes. Las imágenes, 
+por ser mapas de bits y no elementos vectoriales, no escalan de manera natural, toca hacer 
+algunos trucos cómo exportar al doble de tamaño para que puedan visualizarse de manera efectiva. 
+
+Servidor de archivos estaticos dentro de nuestro proyecto
+
+
+Añadiendo gestos touch a nuestro menú con HammerJS:
+
+Gestos:
+Swipe: Pasar de un lado a otro
+
+Pan: Deslizamiento arrastrando el dedo sin separarlo
+
+Tab: Clic 
+
+Press: Presionando
+
+Rotate: Rotación con dos dedos
+
+Pinch/zoom: Presionar pero haciendo zoom
+
+1. Debes instalar phyton
+2. Abrir terminal, ubicarte en la dirección del proyecto por ruta absoluta o relativa y poner: 
+python -m SimpleHTTPServer
+3. Buscar la ip de tu computadora
+4. Abrir un navegador en tu smartphone y poner la ip que buscaste
+(ip mas el puerto :8000 Ejemplo: 192.168.2.10:8000) y listo. 
