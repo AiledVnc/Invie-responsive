@@ -101,3 +101,10 @@ python -m SimpleHTTPServer
 3. Buscar la ip de tu computadora
 4. Abrir un navegador en tu smartphone y poner la ip que buscaste
 (ip mas el puerto :8000 Ejemplo: 192.168.2.10:8000) y listo. 
+
+Optimizar las imagenes
+Optimizar el css
+Que cargue una letra inicial mientras carga lo demas
+Optimizar la fuente
+
+
